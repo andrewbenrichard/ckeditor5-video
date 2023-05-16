@@ -1,4 +1,5 @@
-import { findOptimalInsertionRange, isWidget, toWidget } from '@ckeditor/ckeditor5-widget/src/utils';
+import { isWidget, toWidget } from '@ckeditor/ckeditor5-widget/src/utils';
+import { findOptimalInsertionPosition } from '@ckeditor/ckeditor5-upload/src/utils';
 
 export function toVideoWidget( viewElement, writer) {
 	writer.setCustomProperty( 'video', true, viewElement );
@@ -27,7 +28,7 @@ export function isVideo( modelElement ) {
 export function insertVideo( writer, model, attributes = {} ) {
 	const videoElement = writer.createElement( 'video', attributes );
 
-	const insertAtSelection = findOptimalInsertionRange( model.document.selection, model );
+	const insertAtSelection = findOptimalInsertionPosition( model.document.selection, model );
 
 	model.insertContent( videoElement, insertAtSelection );
 
@@ -76,7 +77,7 @@ function isInOtherVideo( selection ) {
 }
 
 function getInsertVideoParent( selection, model ) {
-	const insertAt = findOptimalInsertionRange( selection, model );
+	const insertAt = findOptimalInsertionPosition( selection, model );
 
 	const parent = insertAt.parent;
 
