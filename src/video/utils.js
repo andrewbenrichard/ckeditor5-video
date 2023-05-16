@@ -1,4 +1,4 @@
-import { findOptimalInsertionPosition, isWidget, toWidget } from '@ckeditor/ckeditor5-widget/src/utils';
+import { findOptimalInsertionRange, isWidget, toWidget } from '@ckeditor/ckeditor5-widget/src/utils';
 
 export function toVideoWidget( viewElement, writer) {
 	writer.setCustomProperty( 'video', true, viewElement );
