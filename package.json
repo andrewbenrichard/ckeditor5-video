@@ -1,0 +1,62 @@
+{
+  "name": "@visao/ckeditor5-video",
+  "version": "23.1.0",
+  "description": "Video features for CKEditor 5 (like Image features).",
+  "keywords": [
+    "ckeditor",
+    "ckeditor5",
+    "ckeditor 5",
+    "ckeditor5-feature",
+    "ckeditor5-plugin",
+    "ckeditor5-video-upload",
+    "ckeditor5-video-upload-plugin"
+  ],
+  "scripts": {
+    "build": "webpack --mode development",
+    "build:watch": "webpack --mode development -w"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-clipboard": "^37.0.1",
+    "@ckeditor/ckeditor5-core": "^37.0.1",
+    "@ckeditor/ckeditor5-engine": "^37.0.1",
+    "@ckeditor/ckeditor5-ui": "^37.0.1",
+    "@ckeditor/ckeditor5-upload": "^37.0.1",
+    "@ckeditor/ckeditor5-utils": "^37.0.1",
+    "@ckeditor/ckeditor5-widget": "^37.0.1"
+  },
+  "devDependencies": {
+    "@ckeditor/ckeditor5-basic-styles": "^37.0.1",
+    "@ckeditor/ckeditor5-dev-utils": "^37.0.1",
+    "@ckeditor/ckeditor5-editor-classic": "^37.0.1",
+    "@ckeditor/ckeditor5-enter": "^37.0.1",
+    "@ckeditor/ckeditor5-essentials": "^37.0.1",
+    "@ckeditor/ckeditor5-heading": "^37.0.1",
+    "@ckeditor/ckeditor5-inspector": "^37.0.1",
+    "@ckeditor/ckeditor5-list": "^37.0.1",
+    "@ckeditor/ckeditor5-paragraph": "^37.0.1",
+    "@ckeditor/ckeditor5-theme-lark": "^37.0.1",
+    "@ckeditor/ckeditor5-undo": "^37.0.1",
+    "postcss-loader": "^4.2.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^1.3.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=5.7.1"
+  },
+  "author": "Visao",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/Technologie-Visao/ckeditor5-video",
+  "bugs": "https://github.com/Technologie-Visao/ckeditor5-video/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Technologie-Visao/ckeditor5-video.git"
+  },
+  "files": [
+    "lang",
+    "src",
+    "theme"
+  ]
+}
