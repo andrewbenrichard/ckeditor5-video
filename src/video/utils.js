@@ -28,7 +28,6 @@ export function insertVideo( writer, model, attributes = {} ) {
 	const videoElement = writer.createElement( 'video', attributes );
 
 	const insertAtSelection = findOptimalInsertionRange( model.document.selection, model );
-	console.log( insertAt);
 	model.insertContent( videoElement, insertAtSelection );
 
 	if ( videoElement.parent ) {
@@ -77,9 +76,7 @@ function isInOtherVideo( selection ) {
 
 function getInsertVideoParent( selection, model ) {
 	const insertAt = findOptimalInsertionRange( selection, model );
-
-	console.log( insertAt);
-	const parent = insertAt.parent;
+	const parent = insertAt.root;
 
 	if ( parent.isEmpty && !parent.is( 'element', '$root' ) ) {
 		return parent.parent;
