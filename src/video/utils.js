@@ -28,7 +28,7 @@ export function insertVideo( writer, model, attributes = {} ) {
 	const videoElement = writer.createElement( 'video', attributes );
 
 	const insertAtSelection = findOptimalInsertionRange( model.document.selection, model );
-
+	console.log( insertAt);
 	model.insertContent( videoElement, insertAtSelection );
 
 	if ( videoElement.parent ) {
