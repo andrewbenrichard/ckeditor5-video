@@ -78,6 +78,7 @@ function isInOtherVideo( selection ) {
 function getInsertVideoParent( selection, model ) {
 	const insertAt = findOptimalInsertionRange( selection, model );
 
+	console.log( insertAt);
 	const parent = insertAt.parent;
 
 	if ( parent.isEmpty && !parent.is( 'element', '$root' ) ) {
